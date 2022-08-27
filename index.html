@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/2a0b64c745.js" crossorigin="anonymous"></script>
+    <title>Advanced To Do List</title>
+</head>
+<body>
+
+<!-- Tool Box Container -->
+            <!-- Emmet commmand for creating an element with class  => Tag_Name.class_name -->
+            <div class="toolbox-cont">
+                <!-- Emmet commmand for creating elements with same class many times  => Tag_Name.class_name*number_of_times -->
+                <div class="toolbox-priority-cont">
+                    <div class="yellow color"></div>
+                    <div class="green color"></div>
+                    <div class="purple color"></div>
+                    <div class="blue color"></div>
+                </div>
+
+                <div class="action-button-cont">
+                    <div class="add-button">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+
+                    <div class="remove-button">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+            </div>
+
+<!-- Ticket Box -->
+            <div class="main-cont">
+            </div>
+
+<!-- Model Container -->
+            <div class="model-cont">
+                <textarea 
+                  spellcheck="false"
+                  class = "textarea-cont" 
+                  placeholder="Enter your task"
+                ></textarea>
+                <div class="priority-color-cont">
+                    <div class="yellow priority-color"></div>
+                    <div class="green priority-color"></div>
+                    <div class="purple priority-color"></div>
+                    <div class="active blue priority-color"></div>
+                </div>
+            </div>
+
+<script src="https://unpkg.com/shortid-dist@1.0.5/dist/shortid-2.2.13.min.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>

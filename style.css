@@ -1,0 +1,231 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#353b48;
+}
+
+.toolbox-cont{
+    height: 5rem;
+    background-color:#222f3e;
+    display: flex ;
+    align-items: center;
+}
+
+.toolbox-cont>*{
+    margin-left: 3rem;
+    border-radius: 5px;
+}
+.toolbox-priority-cont{  
+    height: 3.5rem ;
+    width: 17rem;
+    background-color:#2f3640;
+    display: flex ;
+    align-items: center;
+    justify-content: space-evenly;
+    border: #7f8fa6 ;
+    border-style: solid;
+    border-width: 0.01rem;
+}
+
+.action-button-cont{
+    height: 3.5rem ;
+    width: 8rem;
+    background-color:#2f3640;
+    display: flex ;    
+    border: #7f8fa6 ;
+    border-style: solid;
+    border-width: 0.01rem;
+}
+
+.action-button-cont>*{
+    display: flex ; 
+    justify-content: center;
+    align-items: center; 
+    color: #dcdde1;
+    font-size: 2rem;
+    width: 50%;
+    border-radius: 5px;
+}
+
+.color{
+    height: 1.5rem;
+    width: 18%;   
+}
+
+.yellow{
+    background-color: #fdcb6e; 
+}
+
+.green{ 
+    background-color:#00b894;
+}
+ 
+.purple{
+    background-color: #9c88ff;
+}
+
+.blue{
+    background-color: #487eb0;
+}
+
+.action-button-cont>*:hover{
+    background-color: #718093;
+}
+
+.model-cont{
+    height: 50vh ;
+    width: 45vw ;
+    /* Border of model */
+    background-color:#2f3640;
+    border: #7f8fa6;
+    border-style: solid;
+    border-width: 0.05rem;
+    border-radius: 5px;
+
+    /* Model box Positioning */
+    position: absolute;
+    top: calc((100vh - 50vh) / 2) ;
+    left: calc((100vw - 45vw) / 2);
+
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+    display: none ;
+}
+
+.textarea-cont{
+    height: 100% ;
+    width: 75% ;
+    outline: none;
+    border: none ;
+    background-color: #222f3e ;
+    border-radius: 5px ;
+    resize: none ;
+    padding: 1.5rem ;
+    font-size: 1.5rem;
+    color: aliceblue;
+}
+
+.priority-color-cont{
+    height: 100%;
+    width: 25% ;
+    display: flex ;
+    flex-direction: column ;
+    justify-content: space-around;
+    align-items: center ;
+    
+}
+
+.priority-color{
+    height: 2.5rem ;
+    width: 50% ;
+}
+
+.active{
+    border : 1.5px solid whitesmoke ;
+}
+
+.main-cont{
+    display : flex ;
+    gap: 2rem ;
+    justify-content: center;
+    padding : 2rem ;
+    flex-wrap: wrap;
+    
+}
+
+.ticket-cont{
+    height : 12rem ;
+    width: 15rem ;
+    background-color: #2f3640;
+    border: 1px solid #7f8fa6 ;
+    border-radius: 5px;
+    /* flex-wrap: wrap; */
+}
+
+.ticket-color{
+    height: 1rem ;
+    /* background-color: #fdcb6e; */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.ticket-id{
+    height: 1.5rem ;
+    background-color: #232b3c ;
+    color : #a2b0c4 ;
+    font-size: 1rem;
+    padding : 5px ;
+}
+
+.task-area{
+    height: calc(87% - 1rem - 1.5rem);
+    font-size: 1rem;
+    padding: 5px;
+    color : aliceblue ;
+    outline: none;
+    overflow-wrap: break-word;
+}
+
+.ticket-lock{
+    display: flex ;
+    justify-content: flex-end;
+    font-size: 1.25rem;
+    padding-right: 5px;
+    color: #7f8fa6;
+}
+
+@media screen and (min-width: 425px) and (max-width: 769px){
+    .model-cont{
+        width: 60vw ;
+        left: calc((100vw - 60vw) / 2);
+        
+    }
+}
+
+@media screen and (max-width: 426px){
+    .model-cont{
+        width: 75vw ;
+        height: 65vh ;
+        left: calc((100vw - 75vw) / 2);
+        top: calc((100vh - 65vh) / 2) ;
+        flex-direction: column ;
+    }
+    
+    .priority-color-cont{
+        flex-direction: row ;
+        height: 25%;
+        width: 100% ;
+    }
+
+    .priority-color{
+        height: 60%;
+        width: 17% ;
+    }
+
+    .textarea-cont{
+        height:90% ;
+        width: 100% ;
+    }
+
+    .toolbox-cont>*{
+        margin-left: 2.5rem; 
+    }
+
+    .toolbox-priority-cont{  
+        height: 3.5rem ;
+        width: 15rem;
+    }
+
+    .action-button-cont{
+        height: 3.5rem ;
+        width: 6rem;
+    }
+
+    .toolbox-cont>*{
+        margin-left: 2.5rem;  
+    }
+}
